@@ -14,8 +14,13 @@ from resources.lib.modules import scrape_sources
 class source:
     def __init__(self):
         self.results = []
-        self.domains = ['kissasian.hu']
-        self.base_link = 'https://kissasian.hu'
+        # self.domains = ['kissasian.hu']
+        # self.base_link = 'https://kissasian.hu'
+        # self.search_link = '/search.html?keyword=%s'
+        self.domains = ['gowatchseries.tv', 'gowatchseries.ch', 'gowatchseries.live', 'gowatchseries.online',
+            'gowatchseries.io', 'gowatchseries.co', 'gowatchseries.bz'
+        ]
+        self.base_link = 'https://www5.gowatchseries.tv'
         self.search_link = '/search.html?keyword=%s'
         self.notes = 'the site seems to be erroring out on item page loads. kept in the working folder incase it starts working again soon.'
 
